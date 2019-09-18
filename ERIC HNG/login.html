@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="vieweport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Copenhagen</title>
+    <link rel="stylesheet" href="login.css" />
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="navbar">
+                <a href="#" class="logo">
+                    <img src="logo1.jpg" alt="logoimg" height="100">
+                </a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form name="login" action="" id="mylogin" method="Post">
+                <h2>Copanhagen Login </h2>
+
+                <!-- form input field-->
+                <input type="email" id="uname" name="username" placeholder="Username"
+                    pattern="[a-Z0-9._%+-]+@[a-z0.9.-]+\.[a-z]{2,}$" title="enter the correct email format" required>
+
+                <input type="password" id="pwsd" name="password" placeholder="Password" pattern="[a-zA-Z0-9._%]{8,}"
+                    title="password must be 8 characters long" required><br><br>
+
+                <div class="remember-me">
+                    <input type="checkbox">
+                    <lable>Remember me</lable>
+                </div>
+                <button class="mybtn">Login</button>
+            </form>
+            <!--forgot password and Sign Up call to action-->
+            <p class="footer-links">
+                <a href="#" class="fbtn">Forgot password?</a>
+                <a href="#" class="sbtn">Sign up</a>
+            </p>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

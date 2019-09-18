@@ -1,0 +1,123 @@
+/*feel free to remove the hover transitions i set*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(Copenhagen.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+main{
+    width: 80%;
+    background:rgba(242, 242, 242, 0.5);
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: .3rem;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin: 1rem;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+input{
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="password"]{
+    color: rgb(17, 17, 17);
+    background: rgba(62, 179, 214, 0.74);
+    border: 3px solid transparent;
+    transition: background-color .3s, color .3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+    background: white;
+    border: 3px solid rgba(73, 117, 131, 0.74);
+}
+
+input{
+    border-radius: 1.5rem;
+}
+
+input[type="submit"]{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    color: rgb(46, 44, 44);
+    cursor: pointer;
+    font-family: Roboto;
+    background: white;
+    margin-bottom: 2rem;
+    transition: background-color .3s, color .3s;
+}
+
+input[type="submit"]:hover{
+    background: rgba(73, 117, 131, 0.74);
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    background: rgba(62, 179, 214, 0.74);
+    padding: 1rem;
+    display: inline-block;
+    width: 100%;
+    border-radius: 0 0 1.5rem 1.5rem;
+    transition: background-color .3s;
+}
+
+a:hover{
+    background: white;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 850px){
+    main{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 950px){
+    main{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1050px){
+    main{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1150px){
+    main{
+        width: 40%;
+    }
+}
